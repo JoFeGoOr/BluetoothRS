@@ -22,7 +22,7 @@ sudo systemctl start bluetooth.service
 
 ## desarrollo de software
 
-hasta el momento de elaboracion de esta guia, se han estudiado 2 maneras de desarrollar software capaz de utilizar bluetooth LE.
+hasta el momento de elaboracion de esta guia, se han estudiado 3 maneras de desarrollar software capaz de utilizar bluetooth LE.
 Todo lo explicado a continuacion es realizado en Python3, la ultima version estable es suficiente.
 
 primero se tiene la herramienta Dbus, con esta herramienta se tiene control sobre los procesos de comunicacion que suceden, en este caso, en los adaptadores Bluetooth, con esta alternativa se pueden desarrollar las aplicaciones mas eficientes pero es dificil de ocupar. Esto es el resultado del trabajo de la comunidad Bluetooth internacional, existen cursos disponibles ademas de una guia de estudio para el desarrollo de tecnologias Bluetooth para desarrolldores en linux.
@@ -61,3 +61,14 @@ sudo python3 setup.py install
 ```
 
 luego debemos ejecutar un archivo en python con `import bluetooth`
+
+Otra alternativa es utilizar comunicacion serial en bluetooth BLE para ello debemos utilizar BLE-serial.
+
+```
+pip install ble-serial
+```
+
+Enlaces importantes:
+* https://github.com/Jakeler/ble-serial
+* https://pypi.org/project/ble-serial/
+* https://forums.raspberrypi.com/viewtopic.php?t=215331
